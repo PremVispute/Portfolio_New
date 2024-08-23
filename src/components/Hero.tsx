@@ -11,9 +11,9 @@ export default function Hero() {
   useGSAP(() => {
     gsap.to(".image", {
       scrollTrigger: {
-        trigger: ".base",
+        trigger: ".base-2",
         start: "top bottom",
-        end: "top 40%",
+        end: "top 50%",
         scrub: true,
       },
       autoAlpha: 0,
@@ -33,7 +33,7 @@ export default function Hero() {
         objectFit="cover"
         unoptimized={true}
       />
-      <h1 className="absolute top-36 text-center w-full md:text-3xl italic font-semibold">
+      <h1 className="absolute top-36 text-center w-full md:text-xl italic font-semibold">
         “Design is not just what it looks like and feels like. Design is how it
         works.” <br />- Steve Jobs
       </h1>
