@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger, ExpoScaleEase);
 
 export default function Hero() {
   useGSAP(() => {
-    gsap.to(".image", {
+    gsap.to(".mainBG", {
       scrollTrigger: {
-        trigger: ".base-2",
+        trigger: "#about",
         start: "top bottom",
         end: "top 50%",
         scrub: true,
@@ -28,7 +28,7 @@ export default function Hero() {
       <Image
         src={mainBG}
         alt="mainBG"
-        className="image"
+        className="mainBG"
         layout="fill"
         objectFit="cover"
         unoptimized={true}
