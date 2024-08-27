@@ -1,30 +1,33 @@
-import { IoMenu } from "react-icons/io5";
-
 export default function Header() {
   return (
-    <header className="absolute top-0 left-0 right-0 mx-auto flex justify-between items-center z-50 max-w-screen-md">
-      <div className="flex bg-blue-950 rounded-full px-6 py-2 my-6">
-        <p className="md:text-3xl text-2xl font-medium p-1">PREM VISPUTE</p>
+    <header className="absolute top-0 left-0 right-0 mx-auto flex flex-col justify-between items-center z-50 max-w-screen-md">
+      <div className="flex px-6 mt-12 mb-7">
+        <p className="md:text-5xl text-2xl font-bold p-1 font-din">PREM VISPUTE</p>
       </div>
-      <IoMenu className="text-5xl self-center menu md:hidden" />
-      <div className="md:flex items-center hidden bg-blue-950 rounded-full py-2 px-1">
+      <div className="md:flex items-center hidden px-1">
         <a
           href="#about"
-          className="text-sm font-medium px-5 mx-1 hover:bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out"
+          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din"
         >
           ABOUT
         </a>
         <a
           href="#skills"
-          className="text-sm font-medium px-5 mx-1 hover:bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out"
+          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din"
         >
           SKILLS
         </a>
         <a
           href="#work"
-          className="text-sm font-medium px-5 mx-1 hover:bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out"
+          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din"
         >
           WORK
+        </a>
+        <a
+          href="#contact"
+          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din"
+        >
+          CONTACT
         </a>
       </div>
     </header>

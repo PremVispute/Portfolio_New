@@ -5,3 +5,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: 'din';
+  src: url('/public/fonts/DIN-Regular.ttf') format('ttf'),
+        url('/public/fonts/DIN-Bold.ttf') format('ttf'),
+        url('/public/fonts/DIN-Medium.ttf') format ('ttf');
+  font-weight: normal;
+  font-style: normal;
+}

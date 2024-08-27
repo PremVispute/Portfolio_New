@@ -28,15 +28,15 @@ export default function Hero() {
       <Image
         src={mainBG}
         alt="mainBG"
-        className="mainBG"
+        className="mainBG mt-8"
         layout="fill"
         objectFit="cover"
         unoptimized={true}
       />
-      <h1 className="absolute top-36 text-center w-full md:text-xl italic font-semibold">
+      {/* <h1 className="absolute bottom-8 text-center w-full md:text-xl italic font-semibold">
         “Design is not just what it looks like and feels like. Design is how it
         works.” <br />- Steve Jobs
-      </h1>
+      </h1> */}
     </div>
   );
 }
