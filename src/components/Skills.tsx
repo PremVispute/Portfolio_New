@@ -3,9 +3,11 @@ import { FaEye, FaGithub, FaMoon } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { MdLightMode } from "react-icons/md";
 import { useState } from "react";
+import SkillsCarousel from "./ui/SkillsCarousel";
 
 export default function Skills() {
   const [theme, setTheme] = useState("dark");
+
   return (
     <>
       {/* <div className="flex flex-row">
@@ -60,6 +62,7 @@ export default function Skills() {
           </label>
         </div>
       </div>
+      <SkillsCarousel />
     </>
   );
 }
