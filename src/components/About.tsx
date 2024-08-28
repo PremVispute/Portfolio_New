@@ -6,30 +6,28 @@ import { FaEnvelope, FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function About() {
   return (
     <>
-      <div className="flex flex-row my-12 justify-evenly">
-        <div
-          className="flex flex-col bg-gray-900 w-1/3 rounded-2xl p-4 shadow-xl shadow-gray-800 border-black"
-          id="about"
-        >
-          <div className="flex flex-row justify-center">
-            <div className="rounded-full bg-gray-950 h-24 w-24">
-              <Image
-                src={profileImg}
-                alt="mainBG"
-                className="p-2"
-                unoptimized={true}
-              />
-            </div>
-            <p className="md:text-4xl text-2xl font-medium p-6">Prem Vispute</p>
-          </div>
-          <p className="text-center mt-4">FRONT-END | FULL-STACK | AI / ML</p>
-          <p className="text-center mt-4 text-gray-400">
+      <div className="flex flex-row my-12 justify-center" id="about">
+        <div className="rounded-full bg-gray-950 h-32 w-32 self-center">
+          <Image
+            src={profileImg}
+            alt="mainBG"
+            className="p-2"
+            unoptimized={true}
+          />
+        </div>
+        <div className="flex flex-col w-1/2 ms-10">
+          <p className="md:text-4xl text-2xl font-medium ps-6 py-2 font-din">
+            Prem Vispute
+          </p>
+          <p className="ps-6 py-2 font-din">FRONT-END | FULL-STACK | AI / ML</p>
+          <p className="text-gray-400 ps-6 py-2 font-din">
             A professional merging creativity and technology. Primarily worked
             with MERN stack with a knack for travelling and watching youtube for
             latest technological developments.
           </p>
         </div>
-        <div className="grid grid-cols-2 w-64">
+      </div>
+      {/* <div className="grid grid-cols-2 w-64">
           <div className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800">
             <IoCall className="text-5xl text-gray-400 transition-colors duration-300 hover:text-slate-200" />
           </div>
@@ -54,8 +52,7 @@ export default function About() {
             }}
             loading="lazy"
           ></iframe>
-        </div>
-      </div>
+        </div> */}
     </>
   );
 }
