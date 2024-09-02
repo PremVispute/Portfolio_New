@@ -33,10 +33,6 @@ export default function Hero() {
         objectFit="cover"
         unoptimized={true}
       />
-      {/* <h1 className="absolute bottom-8 text-center w-full md:text-xl italic font-semibold">
-        “Design is not just what it looks like and feels like. Design is how it
-        works.” <br />- Steve Jobs
-      </h1> */}
     </div>
   );
 }

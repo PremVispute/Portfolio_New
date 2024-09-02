@@ -20,20 +20,50 @@ export default function SkillsCarousel() {
   }, []);
   return (
     <>
-      <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-16 w-1/2 mx-auto">
+      <p className="text-center text-3xl font-semibold font-din mt-16">
+        Tech Stack I Use
+      </p>
+      <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 w-1/2 mx-auto">
         <div className="skills-container flex space-x-10">
-          <Image src={reactImg} alt="reactImg" className="skill-item" />
-          <Image src={reactImg} alt="reactImg" className="skill-item" />
-          <Image src={reactImg} alt="reactImg" className="skill-item" />
-          <Image src={reactImg} alt="reactImg" className="skill-item" />
-          <Image src={reactImg} alt="reactImg" className="skill-item" />
-          <Image src={reactImg} alt="reactImg" className="skill-item" />
+          <Image
+            src={reactImg}
+            alt="reactImg"
+            className="skill-item"
+            width={200}
+          />
+          <Image
+            src={reactImg}
+            alt="reactImg"
+            className="skill-item"
+            width={200}
+          />
+          <Image
+            src={reactImg}
+            alt="reactImg"
+            className="skill-item"
+            width={200}
+          />
+          <Image
+            src={reactImg}
+            alt="reactImg"
+            className="skill-item"
+            width={200}
+          />
+          <Image
+            src={reactImg}
+            alt="reactImg"
+            className="skill-item"
+            width={200}
+          />
+          <Image
+            src={reactImg}
+            alt="reactImg"
+            className="skill-item"
+            width={200}
+          />
           {/* Add more skills as needed */}
         </div>
       </div>
-      <p className="text-center text-3xl font-semibold font-din mt-4">
-        Tech Stack I Use
-      </p>
     </>
   );
 }

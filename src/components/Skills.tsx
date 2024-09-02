@@ -1,6 +1,5 @@
 import { FaDownload } from "react-icons/fa6";
-import { FaEye, FaGithub, FaMoon } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { FaEye, FaMoon } from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
 import { useState } from "react";
 import SkillsCarousel from "./ui/SkillsCarousel";
@@ -10,10 +9,6 @@ export default function Skills() {
 
   return (
     <>
-      {/* <div className="flex flex-row">
-        <p>This site is designed, developed & maintained by me</p>
-        <p>Check out my work and coding skills</p>
-      </div> */}
       <div className="flex flex-row justify-evenly" id="skills">
         <div
           className="flex bg-gray-900 rounded-2xl border-black w-96 h-20 justify-evenly items-center my-10"
