@@ -38,7 +38,6 @@ export default function Skills() {
           >
             <FaMoon className="text-5xl hover:text-slate-200" />
           </label>
-
           <input
             type="radio"
             id="light-mode"

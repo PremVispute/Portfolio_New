@@ -1,5 +1,6 @@
 import Image from "next/image";
 import githubImg from "@/utils/images/githubImg.png";
+import leetcodeImg from "@/utils/images/leetcodeImg.png";
 
 export default function Work() {
   return (
@@ -7,8 +8,19 @@ export default function Work() {
       <p className="text-center text-3xl font-semibold font-din mb-10">
         Check out my work
       </p>
-      <div className="flex flex-col w-1/4">
-        <Image src={githubImg} alt="githubImg" />
+      <div className="flex justify-evenly">
+        <Image
+          src={githubImg}
+          alt="githubImg"
+          unoptimized={true}
+          className="w-1/2 h-72"
+        />
+        <Image
+          src={leetcodeImg}
+          alt="leetcodeImg"
+          unoptimized={true}
+          className="w-1/3 h-72"
+        />
       </div>
     </div>
   );

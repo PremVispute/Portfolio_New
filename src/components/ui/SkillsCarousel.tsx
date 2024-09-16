@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import gsap from "gsap";
-import reactImg from "@/utils/images/react-original-wordmark.210x256.png";
 import Image from "next/image";
+import { skillsData } from "@/utils/helpers/skillsData";
 
 export default function SkillsCarousel() {
   useEffect(() => {
@@ -13,7 +13,7 @@ export default function SkillsCarousel() {
     if (totalWidth)
       gsap.to(".skills-container", {
         x: -totalWidth / 2,
-        duration: 30,
+        duration: 50,
         repeat: -1,
         ease: "linear",
       });
@@ -25,43 +25,16 @@ export default function SkillsCarousel() {
       </p>
       <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 w-1/2 mx-auto">
         <div className="skills-container flex space-x-10">
-          <Image
-            src={reactImg}
-            alt="reactImg"
-            className="skill-item"
-            width={200}
-          />
-          <Image
-            src={reactImg}
-            alt="reactImg"
-            className="skill-item"
-            width={200}
-          />
-          <Image
-            src={reactImg}
-            alt="reactImg"
-            className="skill-item"
-            width={200}
-          />
-          <Image
-            src={reactImg}
-            alt="reactImg"
-            className="skill-item"
-            width={200}
-          />
-          <Image
-            src={reactImg}
-            alt="reactImg"
-            className="skill-item"
-            width={200}
-          />
-          <Image
-            src={reactImg}
-            alt="reactImg"
-            className="skill-item"
-            width={200}
-          />
-          {/* Add more skills as needed */}
+          {skillsData.map((data) => (
+            <>
+              <Image
+                src={data.imgLabel}
+                alt="wordpressImg"
+                className="skill-item"
+                width={200}
+              />
+            </>
+          ))}
         </div>
       </div>
     </>
