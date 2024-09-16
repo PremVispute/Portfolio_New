@@ -13,13 +13,13 @@ export default function Work() {
           src={githubImg}
           alt="githubImg"
           unoptimized={true}
-          className="w-1/2 h-72"
+          className="w-1/2 h-1/2"
         />
         <Image
           src={leetcodeImg}
           alt="leetcodeImg"
           unoptimized={true}
-          className="w-1/3 h-72"
+          className="w-1/3 h-1/2"
         />
       </div>
     </div>

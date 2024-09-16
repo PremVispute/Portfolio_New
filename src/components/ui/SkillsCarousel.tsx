@@ -13,7 +13,7 @@ export default function SkillsCarousel() {
     if (totalWidth)
       gsap.to(".skills-container", {
         x: -totalWidth / 2,
-        duration: 50,
+        duration: 20,
         repeat: -1,
         ease: "linear",
       });
@@ -26,14 +26,13 @@ export default function SkillsCarousel() {
       <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 w-1/2 mx-auto">
         <div className="skills-container flex space-x-10">
           {skillsData.map((data) => (
-            <>
               <Image
+                key={data.id}
                 src={data.imgLabel}
                 alt="wordpressImg"
                 className="skill-item"
-                width={200}
+                height={100}
               />
-            </>
           ))}
         </div>
       </div>
