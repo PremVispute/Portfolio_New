@@ -4,7 +4,7 @@ import profileImg from "@/utils/images/79bd2eba-2ca0-4c9e-84c6-d4d02227937d.webp
 export default function About() {
   return (
     <>
-      <div className="flex flex-row my-12 justify-center" id="about">
+      <div className="flex flex-row py-12 justify-center" id="about">
         <div className="rounded-full bg-gray-950 h-32 w-32 self-center">
           <Image
             src={profileImg}

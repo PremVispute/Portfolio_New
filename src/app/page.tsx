@@ -12,11 +12,15 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <About />
-      <Skills />
-      <Work />
-      <Contact />
-      <Footer />
+      <div className="content-with-border">
+        <div className="content">
+          <About />
+          <Skills />
+          <Work />
+          <Contact />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }

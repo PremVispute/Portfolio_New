@@ -11,7 +11,7 @@ export default function Hero() {
   useGSAP(() => {
     gsap.to(".mainBG", {
       scrollTrigger: {
-        trigger: "#about",
+        trigger: ".content-with-border",
         start: "top bottom",
         end: "top 50%",
         scrub: true,
