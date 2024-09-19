@@ -18,7 +18,6 @@ export default function Home() {
         <Image
           src={borderImg}
           alt="Border image"
-          layout="fill"
           objectFit="cover"
           unoptimized={true}
           className="border-image"

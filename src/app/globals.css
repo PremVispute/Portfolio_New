@@ -17,21 +17,21 @@ html {
 
 .content-with-border {
   position: relative;
-  padding: 7rem;
-  box-sizing: border-box;
 }
 
 .border-image {
+  height: 1548px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content {
+  background-color: black;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.content {
-  position: relative;
-  background-color: black;
-  z-index: 1;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 }
