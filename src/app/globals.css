@@ -17,22 +17,17 @@ html {
 
 .content-with-border {
   position: relative;
-  padding: 5rem;
+  padding: 7rem;
   box-sizing: border-box;
 }
 
-.content-with-border::before {
-  content: "";
+.border-image {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/p_icons.jpeg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   z-index: -1;
-  /* padding: 5rem; */
 }
 
 .content {
