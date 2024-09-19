@@ -20,7 +20,7 @@ export default function SkillsCarousel() {
   }, []);
   return (
     <>
-      <p className="text-center text-3xl font-semibold font-din mt-16">
+      <p className="text-center text-3xl font-semibold font-din mt-16 bg-border-image">
         Tech Stack I Use
       </p>
       <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 w-1/2 mx-auto">

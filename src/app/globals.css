@@ -14,3 +14,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.border-image {
+  border: 10rem solid transparent;
+  border-image: url('/src/utils/images/p icons.png') 30 round;
+}
