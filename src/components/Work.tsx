@@ -17,7 +17,7 @@ export default function Work() {
           <Image
             src={githubImg}
             alt="githubImg"
-            width={600} // Set explicit width and height
+            width={600}
             unoptimized={true}
             className="hover:opacity-80 transition-opacity"
           />
@@ -30,7 +30,7 @@ export default function Work() {
           <Image
             src={leetcodeImg}
             alt="leetcodeImg"
-            width={410} // Set explicit width and height
+            width={410}
             unoptimized={true}
             className="hover:opacity-80 transition-opacity"
           />
