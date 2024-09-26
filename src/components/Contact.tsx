@@ -8,9 +8,9 @@ import {
 export default function Contact() {
   return (
     <>
-      <div className="flex justify-around items-center">
+      <div className="flex md:flex-row flex-col justify-around items-center">
         <p className="font-din font-semibold text-3xl">Lets get in touch!</p>
-        <div className="grid grid-cols-2 w-44 h-44" id="contact">
+        <div className="grid grid-cols-2 w-44 h-44 md:mt-0 my-8" id="contact">
           <a
             href="https://wa.me/919702714557/?text=I%20am%20interested%20in%20your%20work"
             target="_blank"

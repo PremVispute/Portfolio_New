@@ -6,28 +6,28 @@ export default function Header() {
           PREM VISPUTE
         </p>
       </div>
-      <div className="flex items-center px-1">
+      <div className="flex md:flex-row flex-col items-center px-1">
         <a
           href="#about"
-          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din"
+          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din md:my-0 my-2"
         >
           ABOUT
         </a>
         <a
           href="#skills"
-          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din"
+          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din md:my-0 my-2"
         >
           SKILLS
         </a>
         <a
           href="#work"
-          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din"
+          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din md:my-0 my-2"
         >
           WORK
         </a>
         <a
           href="#contact"
-          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din"
+          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din md:my-0 my-2"
         >
           CONTACT
         </a>

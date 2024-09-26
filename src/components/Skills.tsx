@@ -9,9 +9,9 @@ export default function Skills() {
 
   return (
     <>
-      <div className="flex flex-row justify-evenly" id="skills">
+      <div className="flex flex-col md:flex-row justify-evenly" id="skills">
         <div
-          className="flex bg-gray-900 rounded-2xl border-black w-96 h-20 justify-evenly items-center my-10"
+          className="flex bg-gray-900 rounded-2xl border-black md:w-96 md:mx-0 mx-4 h-20 justify-evenly items-center my-10"
           id="skills"
         >
           <div className="text-center flex flex-col justify-evenly">
@@ -25,7 +25,7 @@ export default function Skills() {
             <FaEye className="text-5xl text-gray-400 hover:text-slate-200" />
           </a>
         </div>
-        <div className="flex bg-gray-900 rounded-2xl border-black w-72 justify-evenly items-center h-20 my-10">
+        <div className="flex bg-gray-900 rounded-2xl border-black md:w-72 md:mx-0 mx-4 justify-evenly items-center h-20 my-10">
           <input
             type="radio"
             id="dark-mode"

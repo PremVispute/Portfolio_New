@@ -8,7 +8,7 @@ export default function Work() {
       <p className="text-center text-3xl font-semibold font-din mb-10">
         Check out my work
       </p>
-      <div className="flex justify-evenly items-center">
+      <div className="flex md:flex-row flex-col justify-evenly items-center">
         <a
           href="https://github.com/PremVispute"
           target="blank"
@@ -19,7 +19,7 @@ export default function Work() {
             alt="githubImg"
             width={600}
             unoptimized={true}
-            className="hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity mb-5"
           />
         </a>
         <a
