@@ -8,19 +8,33 @@ export default function Work() {
       <p className="text-center text-3xl font-semibold font-din mb-10">
         Check out my work
       </p>
-      <div className="flex justify-evenly">
-        <Image
-          src={githubImg}
-          alt="githubImg"
-          unoptimized={true}
-          className="w-1/2 h-1/2"
-        />
-        <Image
-          src={leetcodeImg}
-          alt="leetcodeImg"
-          unoptimized={true}
-          className="w-1/3 h-1/2"
-        />
+      <div className="flex justify-evenly items-center">
+        <a
+          href="https://github.com/PremVispute"
+          target="blank"
+          className="block"
+        >
+          <Image
+            src={githubImg}
+            alt="githubImg"
+            width={600} // Set explicit width and height
+            unoptimized={true}
+            className="hover:opacity-80 transition-opacity"
+          />
+        </a>
+        <a
+          href="https://leetcode.com/u/heisenbergOG/"
+          target="blank"
+          className="block"
+        >
+          <Image
+            src={leetcodeImg}
+            alt="leetcodeImg"
+            width={410} // Set explicit width and height
+            unoptimized={true}
+            className="hover:opacity-80 transition-opacity"
+          />
+        </a>
       </div>
     </div>
   );

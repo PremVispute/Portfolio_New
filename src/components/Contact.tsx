@@ -1,5 +1,9 @@
-import { IoCall } from "react-icons/io5";
-import { FaEnvelope, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -7,18 +11,34 @@ export default function Contact() {
       <div className="flex justify-around items-center">
         <p className="font-din font-semibold text-3xl">Lets get in touch!</p>
         <div className="grid grid-cols-2 w-44 h-44" id="contact">
-          <div className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800">
-            <IoCall className="text-4xl text-gray-400 transition-colors duration-300 hover:text-slate-200" />
-          </div>
-          <div className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800">
+          <a
+            href="https://wa.me/919702714557/?text=I%20am%20interested%20in%20your%20work"
+            target="_blank"
+            className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800"
+          >
+            <FaWhatsapp className="text-4xl text-gray-400 transition-colors duration-300 hover:text-slate-200" />
+          </a>
+          <a
+            href="mailto:premvispute@gmail.com"
+            target="_blank"
+            className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800"
+          >
             <FaEnvelope className="text-4xl text-gray-400 transition-colors duration-300 hover:text-slate-200" />
-          </div>
-          <div className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800">
+          </a>
+          <a
+            href="https://www.instagram.com/premvispute/"
+            target="_blank"
+            className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800"
+          >
             <FaInstagram className="text-4xl text-gray-400 transition-colors duration-300 hover:text-slate-200" />
-          </div>
-          <div className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/premvispute/"
+            target="_blank"
+            className="bg-gray-900 rounded-2xl m-2 flex justify-center items-center transform transition-transform duration-300 hover:scale-110 hover:bg-gray-800"
+          >
             <FaLinkedin className="text-4xl text-gray-400 transition-colors duration-300 hover:text-slate-200" />
-          </div>
+          </a>
         </div>
         <div className="bg-gray-900 rounded-2xl overflow-hidden h-44 ">
           <iframe

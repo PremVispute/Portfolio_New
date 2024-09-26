@@ -18,8 +18,12 @@ export default function Skills() {
             <p className="text-2xl font-semibold">RESUME</p>
             <p className="font-semibold text-gray-400">2024 CV</p>
           </div>
-          <FaDownload className="text-5xl text-gray-400 hover:text-slate-200" />
-          <FaEye className="text-5xl text-gray-400 hover:text-slate-200" />
+          <a href="/Prem_Vispute_Resume.pdf" download>
+            <FaDownload className="text-5xl text-gray-400 hover:text-slate-200" />
+          </a>
+          <a href="/Prem_Vispute_Resume.pdf" target="blank">
+            <FaEye className="text-5xl text-gray-400 hover:text-slate-200" />
+          </a>
         </div>
         <div className="flex bg-gray-900 rounded-2xl border-black w-72 justify-evenly items-center h-20 my-10">
           <input
