@@ -13,7 +13,7 @@ export default function About() {
             unoptimized={true}
           />
         </div>
-        <div className="flex flex-col w-1/2 ms-10">
+        <div className="flex flex-col w-3/5 ms-10">
           <p className="md:text-4xl text-2xl font-medium ps-6 py-2 font-din">
             Prem Vispute
           </p>
