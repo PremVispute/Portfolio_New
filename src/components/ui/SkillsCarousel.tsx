@@ -23,7 +23,7 @@ export default function SkillsCarousel() {
       <p className="text-center text-3xl font-semibold font-din mt-16 bg-border-image">
         Tech Stack I Use
       </p>
-      <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 md:w-1/2 w-96 mx-auto">
+      <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 md:w-3/4 w-96 mx-auto">
         <div className="skills-container flex space-x-10">
           {skillsData.map((data) => (
             <Image
