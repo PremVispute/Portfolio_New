@@ -1,11 +1,19 @@
 import { FaDownload } from "react-icons/fa6";
 import { FaEye, FaMoon } from "react-icons/fa";
 import { MdLightMode } from "react-icons/md";
-import { useState } from "react";
 import SkillsCarousel from "./ui/SkillsCarousel";
+import React, { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 export default function Skills() {
-  const [theme, setTheme] = useState("dark");
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <>

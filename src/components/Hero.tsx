@@ -28,7 +28,7 @@ export default function Hero() {
       <Image
         src={mainBG}
         alt="mainBG"
-        className="mainBG mt-8"
+        className="mainBG"
         layout="fill"
         objectFit="cover"
         unoptimized={true}

@@ -8,6 +8,7 @@ import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 import Work from "@/components/Work";
 import borderImg from "@/utils/images/p_icons.jpeg";
+import React from "react";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
           unoptimized={true}
           className="border-image"
         />
-        <div className="content">
+        <div className="content dark:bg-black bg-white">
           <About />
           <Skills />
           <Work />

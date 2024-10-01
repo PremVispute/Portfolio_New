@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import { skillsData } from "@/utils/helpers/skillsData";
+import React from "react";
 
 export default function SkillsCarousel() {
   useEffect(() => {

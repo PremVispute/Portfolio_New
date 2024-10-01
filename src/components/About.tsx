@@ -1,5 +1,6 @@
 import Image from "next/image";
 import profileImg from "@/utils/images/79bd2eba-2ca0-4c9e-84c6-d4d02227937d.webp";
+import React from "react";
 
 export default function About() {
   return (

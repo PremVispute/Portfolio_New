@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FaEnvelope,
   FaInstagram,
@@ -9,7 +10,7 @@ export default function Contact() {
   return (
     <>
       <div className="flex md:flex-row flex-col justify-around items-center">
-        <p className="font-din font-semibold text-3xl">Lets get in touch!</p>
+        <p className="font-din font-semibold text-3xl">Get in touch!</p>
         <div className="grid grid-cols-2 w-44 h-44 md:mt-0 my-8" id="contact">
           <a
             href="https://wa.me/919702714557/?text=I%20am%20interested%20in%20your%20work"
@@ -44,6 +45,7 @@ export default function Contact() {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88118615!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1724655652187!5m2!1sen!2sin"
             height="600"
+            width="180"
             style={{
               border: 0,
               marginTop: "-200px",
