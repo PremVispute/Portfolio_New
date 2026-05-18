@@ -4,12 +4,22 @@ import { FaBriefcase, FaGraduationCap } from "react-icons/fa6";
 import profileImg from "@/utils/images/79bd2eba-2ca0-4c9e-84c6-d4d02227937d.webp";
 
 const STATS = [
-  { value: "3+", label: "Years Experience" },
-  { value: "20+", label: "Projects Shipped" },
-  { value: "10+", label: "Technologies" },
+  { value: "4+", label: "Years in FinTech" },
+  { value: "3", label: "Companies · IN & UAE" },
+  { value: "6", label: "Countries Shipped To" },
 ];
 
-const TAGS = ["React", "Next.js", "TypeScript", "Node.js", "Python", "MongoDB"];
+const TAGS = [
+  "Payment Gateways",
+  "Core Banking",
+  "LMS",
+  "SWITCH",
+  "TypeScript",
+  "React / Next.js",
+  "Node.js",
+  "Java",
+  "PostgreSQL",
+];
 
 export default function About() {
   return (
@@ -63,32 +73,32 @@ export default function About() {
               Prem Vispute
             </h3>
             <p className="mt-1 text-sm font-semibold font-din tracking-widest gradient-text">
-              FRONT-END · FULL-STACK · AI / ML
+              FULL-STACK ENGINEER · FINTECH · INDIA &amp; UAE
             </p>
 
             <p className="mt-4 text-slate-700 dark:text-slate-300 font-din leading-relaxed">
-              A professional merging creativity and technology. I primarily work
-              with the{" "}
+              I&apos;ve spent the last 4 years building financial software that
+              handles real money &mdash;{" "}
               <span className="font-semibold text-slate-900 dark:text-white">
-                MERN stack
+                Core Banking, Loan Management, Payment Gateways, and SWITCH
               </span>{" "}
-              and have a growing focus on AI/ML. When I&apos;m not building
-              things, I&apos;m travelling or down a YouTube rabbit hole on the
-              latest tech.
+              systems &mdash; at FinTech startups in India and the UAE.
+              Currently in Dubai, building the merchant ecosystem behind a
+              payment gateway while pursuing an MBA at NMIMS.
             </p>
 
             <div className="mt-5 flex flex-wrap justify-center md:justify-start gap-3 text-sm font-din text-slate-700 dark:text-slate-300">
               <span className="inline-flex items-center gap-2 rounded-full glass px-3 py-1.5">
                 <FaMapMarkerAlt className="text-indigo-500" />
-                Mumbai, India
+                Mumbai &middot; Dubai
               </span>
               <span className="inline-flex items-center gap-2 rounded-full glass px-3 py-1.5">
                 <FaBriefcase className="text-fuchsia-500" />
-                Full-stack Developer
+                FinTech Full-Stack Engineer
               </span>
               <span className="inline-flex items-center gap-2 rounded-full glass px-3 py-1.5">
                 <FaGraduationCap className="text-sky-500" />
-                CS Graduate
+                BE IT &middot; MBA (NMIMS)
               </span>
             </div>
 

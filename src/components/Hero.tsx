@@ -192,7 +192,7 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
             </span>
-            Available for new opportunities
+            Open to senior full-stack & FinTech roles
           </span>
 
           <h2
@@ -207,12 +207,16 @@ export default function Hero() {
 
           <p
             data-reveal
-            className="relative mt-4 max-w-xl font-din text-base leading-relaxed text-white/92 drop-shadow-[0_8px_22px_rgba(0,0,0,0.9)] sm:text-lg md:text-xl"
+            className="relative mt-4 max-w-2xl font-din text-base leading-relaxed text-white/92 drop-shadow-[0_8px_22px_rgba(0,0,0,0.9)] sm:text-lg md:text-xl"
           >
-            I build modern, performant web experiences across the{" "}
-            <span className="text-white font-medium">MERN stack</span>, with a
-            growing focus on{" "}
-            <span className="text-white font-medium">AI / ML</span>.
+            For 4 years I&rsquo;ve built{" "}
+            <span className="text-white font-medium">FinTech</span> systems that
+            move real money &mdash;{" "}
+            <span className="text-white font-medium">payment gateways</span>,{" "}
+            <span className="text-white font-medium">core banking</span>, and{" "}
+            <span className="text-white font-medium">loan management</span>{" "}
+            &mdash; shipping production software across{" "}
+            <span className="text-white font-medium">Mumbai &amp; Dubai</span>.
           </p>
 
           <div

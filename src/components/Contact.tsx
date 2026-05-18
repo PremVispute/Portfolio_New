@@ -2,6 +2,7 @@ import {
   FaEnvelope,
   FaInstagram,
   FaLinkedin,
+  FaMapMarkerAlt,
   FaWhatsapp,
 } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
@@ -95,7 +96,8 @@ export default function Contact() {
               <FaArrowUpRightFromSquare className="text-slate-500 dark:text-slate-400 group-hover:text-indigo-500 transition-colors" />
             </a>
             <p className="mt-4 font-din text-slate-600 dark:text-slate-300 text-sm">
-              Based in Mumbai, IN · Available worldwide (remote)
+              Splitting time between Mumbai &amp; Dubai · Open to remote
+              worldwide
             </p>
 
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -126,20 +128,62 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Map */}
-          <div className="relative rounded-2xl overflow-hidden border border-black/[0.08] dark:border-white/10 aspect-[4/3] md:aspect-auto md:h-80">
-            <iframe
-              title="Map showing Mumbai, Maharashtra"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88118615!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1724655652187!5m2!1sen!2sin"
-              className="absolute inset-0 h-full w-full"
-              style={{ border: 0, filter: "saturate(0.85) contrast(1.05)" }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10"
-            />
+          {/* Locations */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:h-80">
+            {[
+              {
+                city: "Dubai, UAE",
+                note: "Currently here",
+                accent: "from-amber-500 to-orange-600",
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462562.49043247675!2d54.94755469726561!3d25.07575569410303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1715000000000",
+                title: "Map showing Dubai, UAE",
+              },
+              {
+                city: "Mumbai, India",
+                note: "Home base",
+                accent: "from-indigo-500 to-fuchsia-500",
+                src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.03900799053!2d72.88118615!3d19.082250749999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1724655652187",
+                title: "Map showing Mumbai, Maharashtra",
+              },
+            ].map((loc) => (
+              <div
+                key={loc.city}
+                className="relative rounded-2xl overflow-hidden border border-black/[0.08] dark:border-white/10 min-h-[10rem]"
+              >
+                <iframe
+                  title={loc.title}
+                  src={loc.src}
+                  className="absolute inset-0 h-full w-full"
+                  style={{ border: 0, filter: "saturate(0.85) contrast(1.05)" }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"
+                />
+                <div className="absolute inset-x-0 bottom-0 p-3 flex items-end justify-between">
+                  <div>
+                    <p className="font-din font-bold text-white text-sm inline-flex items-center gap-1.5 drop-shadow-md">
+                      <FaMapMarkerAlt />
+                      {loc.city}
+                    </p>
+                    <p className="font-din text-[11px] text-white/80 drop-shadow">
+                      {loc.note}
+                    </p>
+                  </div>
+                  <span
+                    className={`rounded-full bg-gradient-to-r ${loc.accent} px-2.5 py-0.5 text-[10px] font-semibold font-din text-white shadow`}
+                  >
+                    {loc.note === "Currently here" ? "NOW" : "ALSO"}
+                  </span>
+                </div>
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
