@@ -1,47 +1,67 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import { skillsData } from "@/utils/helpers/skillsData";
 
 export default function SkillsCarousel() {
-  useEffect(() => {
-    const skillsContainer = document.querySelector(".skills-container");
-    const totalWidth = skillsContainer?.scrollWidth;
+  const containerRef = useRef<HTMLDivElement>(null);
 
-    if (skillsContainer) skillsContainer.innerHTML += skillsContainer.innerHTML;
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const totalWidth = el.scrollWidth;
+    el.innerHTML += el.innerHTML;
 
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
-    if (totalWidth && !prefersReducedMotion) {
-      gsap.to(".skills-container", {
-        x: -totalWidth / 2,
-        duration: 20,
+    if (!prefersReducedMotion && totalWidth > 0) {
+      const tween = gsap.to(el, {
+        x: -totalWidth,
+        duration: 30,
         repeat: -1,
         ease: "linear",
       });
+      return () => {
+        tween.kill();
+      };
     }
   }, []);
+
   return (
-    <>
-      <h2 className="text-center text-3xl font-semibold font-din mt-16 bg-border-image">
-        Tech Stack I Use
-      </h2>
-      <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 md:w-3/4 w-[calc(100%-2rem)] max-w-md md:max-w-none mx-auto">
-        <div className="skills-container flex space-x-10" aria-hidden="true">
-          {skillsData.map((data) => (
+    <div className="relative mt-10 glass rounded-2xl overflow-hidden py-8">
+      {/* Edge fades */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white/80 dark:from-[#0a0a0f]/80 to-transparent z-10"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white/80 dark:from-[#0a0a0f]/80 to-transparent z-10"
+      />
+      <div
+        ref={containerRef}
+        className="flex space-x-12 will-change-transform"
+        aria-hidden="true"
+      >
+        {skillsData.map((data) => (
+          <div
+            key={data.id}
+            className="flex items-center justify-center h-20 w-24 flex-shrink-0 grayscale-[20%] hover:grayscale-0 transition"
+          >
             <Image
-              key={data.id}
               src={data.imgLabel}
               alt=""
-              className="skill-item"
-              height={100}
+              height={70}
+              className="object-contain max-h-16"
+              unoptimized
             />
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }

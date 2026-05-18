@@ -31,35 +31,154 @@ html {
   scroll-padding-top: 6rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+/* ---------------- Decorative background ----------------
+ * Fixed multi-layer gradient mesh + subtle grid sitting behind
+ * every glass card. Visible through `backdrop-blur`.
+ */
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 12% 10%, rgba(99, 102, 241, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 88% 18%, rgba(236, 72, 153, 0.14) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 50% 95%, rgba(56, 189, 248, 0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 80% 70%, rgba(139, 92, 246, 0.14) 0%, transparent 60%);
+}
+
+.dark .site-bg {
+  background-color: #0a0a0f;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 12% 10%, rgba(99, 102, 241, 0.22) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 88% 18%, rgba(236, 72, 153, 0.16) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 60% at 50% 95%, rgba(56, 189, 248, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 80% 70%, rgba(139, 92, 246, 0.16) 0%, transparent 60%);
+}
+
+.site-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+}
+
+.dark .site-bg::after {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* ---------------- Glass + utilities ---------------- */
+.glass {
+  background-color: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 10px 30px -12px rgba(15, 23, 42, 0.18);
+}
+
+.dark .glass {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.06) inset,
+    0 10px 30px -12px rgba(0, 0, 0, 0.6);
+}
+
+.glass-strong {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+}
+
+.dark .glass-strong {
+  background-color: rgba(20, 20, 28, 0.55);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Conic gradient ring used around the avatar */
+@keyframes conic-spin { to { transform: rotate(360deg); } }
+.conic-ring {
+  background: conic-gradient(
+    from 0deg,
+    #6366f1,
+    #ec4899,
+    #38bdf8,
+    #8b5cf6,
+    #6366f1
+  );
+  animation: conic-spin 8s linear infinite;
+}
+
+/* Floating ambient orbs */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(-18px) translateX(8px); }
+}
+.float-slow { animation: float-slow 9s ease-in-out infinite; }
+
+/* Scroll progress bar (JS sets --p between 0 and 1) */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  z-index: 60;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transform: scaleX(var(--p, 0));
+  background: linear-gradient(90deg, #6366f1, #ec4899, #38bdf8);
+  will-change: transform;
+}
+
+/* Cursor spotlight (desktop only) */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 520px;
+  height: 520px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 1;
+  transform: translate3d(var(--x, -9999px), var(--y, -9999px), 0) translate(-50%, -50%);
+  background: radial-gradient(circle at center, rgba(99, 102, 241, 0.22), transparent 60%);
+  mix-blend-mode: screen;
+  transition: opacity 200ms ease;
+  will-change: transform;
+}
+@media (max-width: 768px), (hover: none) {
+  .cursor-glow { display: none; }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #6366f1, #ec4899 50%, #38bdf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-.content-with-border {
-  position: relative;
-}
-
-.border-image {
-  height: 1548px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  .conic-ring, .float-slow { animation: none !important; }
 }
