@@ -1,36 +1,30 @@
+const NAV_LINK_CLASSES =
+  "text-xs md:text-sm font-semibold px-3 md:px-5 mx-0.5 md:mx-1 bg-blue-800 hover:bg-blue-700 rounded-full py-1.5 md:py-2 transition-colors duration-200 ease-in-out font-din text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent";
+
 export default function Header() {
   return (
-    <header className="absolute top-0 left-0 right-0 mx-auto flex flex-col justify-between items-center z-50 max-w-screen-md">
-      <div className="flex px-6 mt-12 mb-7">
-        <p className="md:text-5xl text-2xl font-bold p-1 font-din dark:text-slate-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-md supports-[backdrop-filter]:bg-black/25">
+      <div className="mx-auto max-w-screen-md flex items-center justify-between gap-3 px-4 py-3 md:py-4">
+        <h1 className="md:text-3xl text-lg font-bold font-din text-white tracking-tight">
           PREM VISPUTE
-        </p>
-      </div>
-      <div className="flex md:flex-row flex-col items-center px-1">
-        <a
-          href="#about"
-          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din md:my-0 my-2 dark:text-slate-200"
+        </h1>
+        <nav
+          aria-label="Primary"
+          className="flex flex-row items-center"
         >
-          ABOUT
-        </a>
-        <a
-          href="#skills"
-          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din md:my-0 my-2 dark:text-slate-200"
-        >
-          SKILLS
-        </a>
-        <a
-          href="#work"
-          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din md:my-0 my-2 dark:text-slate-200"
-        >
-          WORK
-        </a>
-        <a
-          href="#contact"
-          className="text-md font-semibold px-5 mx-1 bg-blue-800 rounded-full py-1 transition duration-500 ease-in-out font-din md:my-0 my-2 dark:text-slate-200"
-        >
-          CONTACT
-        </a>
+          <a href="#about" className={NAV_LINK_CLASSES}>
+            ABOUT
+          </a>
+          <a href="#skills" className={NAV_LINK_CLASSES}>
+            SKILLS
+          </a>
+          <a href="#work" className={NAV_LINK_CLASSES}>
+            WORK
+          </a>
+          <a href="#contact" className={NAV_LINK_CLASSES}>
+            CONTACT
+          </a>
+        </nav>
       </div>
     </header>
   );

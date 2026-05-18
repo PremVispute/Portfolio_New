@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
@@ -8,7 +7,6 @@ import Footer from "@/components/ui/Footer";
 import Header from "@/components/ui/Header";
 import Work from "@/components/Work";
 import borderImg from "@/utils/images/p_icons.jpeg";
-import React from "react";
 
 export default function Home() {
   return (
@@ -18,12 +16,11 @@ export default function Home() {
       <div className="content-with-border">
         <Image
           src={borderImg}
-          alt="Border image"
-          objectFit="cover"
-          unoptimized={true}
+          alt=""
+          unoptimized
           className="border-image"
         />
-        <div className="content dark:bg-black bg-white">
+        <div className="content bg-white dark:bg-[#121212]">
           <About />
           <Skills />
           <Work />

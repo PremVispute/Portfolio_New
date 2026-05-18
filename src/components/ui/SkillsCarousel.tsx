@@ -1,8 +1,8 @@
+"use client";
 import { useEffect } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import { skillsData } from "@/utils/helpers/skillsData";
-import React from "react";
 
 export default function SkillsCarousel() {
   useEffect(() => {
@@ -11,26 +11,31 @@ export default function SkillsCarousel() {
 
     if (skillsContainer) skillsContainer.innerHTML += skillsContainer.innerHTML;
 
-    if (totalWidth)
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    if (totalWidth && !prefersReducedMotion) {
       gsap.to(".skills-container", {
         x: -totalWidth / 2,
         duration: 20,
         repeat: -1,
         ease: "linear",
       });
+    }
   }, []);
   return (
     <>
-      <p className="text-center text-3xl font-semibold font-din mt-16 bg-border-image">
+      <h2 className="text-center text-3xl font-semibold font-din mt-16 bg-border-image">
         Tech Stack I Use
-      </p>
-      <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 md:w-3/4 w-96 mx-auto">
-        <div className="skills-container flex space-x-10">
+      </h2>
+      <div className="skills-section overflow-hidden bg-gray-900 py-10 mt-4 md:w-3/4 w-[calc(100%-2rem)] max-w-md md:max-w-none mx-auto">
+        <div className="skills-container flex space-x-10" aria-hidden="true">
           {skillsData.map((data) => (
             <Image
               key={data.id}
               src={data.imgLabel}
-              alt="wordpressImg"
+              alt=""
               className="skill-item"
               height={100}
             />

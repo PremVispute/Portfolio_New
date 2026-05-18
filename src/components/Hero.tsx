@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import mainBG from "@/utils/images/mainBG.jpg";
 import { useGSAP } from "@gsap/react";
@@ -9,6 +10,11 @@ gsap.registerPlugin(ScrollTrigger, ExpoScaleEase);
 
 export default function Hero() {
   useGSAP(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    if (prefersReducedMotion) return;
+
     gsap.to(".mainBG", {
       scrollTrigger: {
         trigger: ".content-with-border",
@@ -27,11 +33,11 @@ export default function Hero() {
     <div className="relative h-screen overflow-hidden">
       <Image
         src={mainBG}
-        alt="mainBG"
-        className="mainBG"
-        layout="fill"
-        objectFit="cover"
-        unoptimized={true}
+        alt=""
+        className="mainBG object-cover"
+        fill
+        priority
+        unoptimized
       />
     </div>
   );

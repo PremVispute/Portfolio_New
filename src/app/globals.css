@@ -4,15 +4,44 @@
 
 @font-face {
   font-family: "din";
-  src: url("/Portfolio_New/fonts/DIN-Regular.ttf") format("truetype"),
-    url("/Portfolio_New/fonts/DIN-Bold.ttf") format("truetype"),
-    url("/Portfolio_New/fonts/DIN-Medium.ttf") format ("truetype");
-  font-weight: normal;
+  src: url("/Portfolio_New/fonts/DIN-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "din";
+  src: url("/Portfolio_New/fonts/DIN-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "din";
+  src: url("/Portfolio_New/fonts/DIN-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 .content-with-border {

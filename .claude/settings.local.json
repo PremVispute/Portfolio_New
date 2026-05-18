@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx next *)",
+      "Bash(npx tsc *)",
+      "Bash(python --version 2>&1; python3 --version 2>&1; ls \"C:/Users/prem.v/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/scripts/\" 2>&1 | head -20)",
+      "Read(//c/Users/prem.v/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(find \"C:/Users/prem.v/.claude/plugins/cache/ui-ux-pro-max-skill/\" -name \"search.py\" 2>&1 | head -5)",
+      "Read(//c/Users/prem.v/.claude/plugins/cache/ui-ux-pro-max-skill/**)",
+      "Bash(python \"C:/Users/prem.v/.claude/plugins/cache/ui-ux-pro-max-skill/ui-ux-pro-max/2.5.0/src/ui-ux-pro-max/scripts/search.py\" \"personal portfolio modern dark mode\" --design-system -p \"Prem Vispute Portfolio\")"
+    ]
+  }
+}
