@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Prem Vispute — Portfolio",
+    "description": "Front-end · Full-stack · IA / ML — Portfolio personnel de Prem Vispute"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "work": "Projets",
+    "contact": "Contact"
+  },
+  "language": {
+    "title": "Langue",
+    "label": "Changer de langue",
+    "current": "Langue actuelle"
+  },
+  "hero": {
+    "badge": "Ouvert aux postes senior full-stack & FinTech",
+    "greeting": "Bonjour, je suis",
+    "name": "Prem",
+    "introHtml": "Depuis 4 ans, je construis des plateformes <strong>FinTech</strong> qui font circuler de l’argent réel, notamment des <strong>passerelles de paiement</strong>, du <strong>core banking</strong> et de la <strong>gestion de prêts</strong>, en livrant des logiciels en production entre <strong>Mumbai &amp; Dubaï</strong>.",
+    "ctaWork": "Voir mes projets",
+    "ctaContact": "Me contacter",
+    "scroll": "DÉFILER"
+  },
+  "about": {
+    "kicker": "À PROPOS DE MOI",
+    "headingPre": "Un mot",
+    "headingAccent": "sur moi",
+    "role": "INGÉNIEUR FULL-STACK · FINTECH · INDE & ÉAU",
+    "bioHtml": "J’ai passé les 4 dernières années à construire des logiciels financiers qui manipulent de l’argent réel, dont des systèmes de <strong>Core Banking, Gestion de Prêts, Passerelles de Paiement et SWITCH</strong>, au sein de startups FinTech en Inde et aux Émirats. Actuellement à Dubaï, je construis l’écosystème marchand derrière une passerelle de paiement tout en poursuivant un MBA à NMIMS.",
+    "chips": {
+      "location": "Mumbai · Dubaï",
+      "job": "Ingénieur Full-Stack FinTech",
+      "education": "BE IT · MBA (NMIMS)"
+    },
+    "tags": [
+      "Passerelles de paiement",
+      "Core Banking",
+      "LMS",
+      "SWITCH",
+      "TypeScript",
+      "React / Next.js",
+      "Node.js",
+      "Java",
+      "PostgreSQL"
+    ],
+    "stats": [
+      { "value": "4+", "label": "Années en FinTech" },
+      { "value": "3", "label": "Entreprises · IN & ÉAU" },
+      { "value": "6", "label": "Pays desservis" }
+    ]
+  },
+  "experience": {
+    "kicker": "EXPÉRIENCE",
+    "headingPre": "Là où j’ai",
+    "headingAccent": "livré",
+    "subtitle": "Quatre ans dans trois entreprises FinTech entre l’Inde et les Émirats.",
+    "current": "Actuel",
+    "roles": [
+      {
+        "company": "Omnis Solutio",
+        "title": "Ingénieur Full-Stack",
+        "period": "Nov. 2025 — Aujourd’hui",
+        "location": "Dubaï, ÉAU",
+        "current": true,
+        "bullets": [
+          "Construction de l’écosystème marchand d’une passerelle de paiement, incluant tableaux de bord, pages de paiement, SDK et intégrations CMS utilisés pour les paiements en ligne.",
+          "Conception d’un frontend piloté par le backend avec une couche de thème configurable : branding (logo, police, couleurs) et la plupart des changements UI sont livrés par configuration, sans redéploiement.",
+          "Étude des écosystèmes de plugins WooCommerce, WordPress, Shopify et Wix ; proposition d’une stratégie d’implémentation évolutive.",
+          "Mise en production de la plateforme web globale de l’entreprise avec localisation et contenu régionalisé pour 6 pays."
+        ],
+        "stack": ["TypeScript", "React", "Node.js", "JavaScript"]
+      },
+      {
+        "company": "Golden Legand Leasing & Finance",
+        "title": "Ingénieur Full-Stack",
+        "period": "Juil. 2024 — Nov. 2025",
+        "location": "Mumbai, Inde",
+        "bullets": [
+          "Pilotage du développement full-stack de plus de 4 plateformes web d’entreprise en React, TypeScript et Next.js, avec un focus sur une UI réactive et performante.",
+          "Développement d’APIs REST backend en Java et PostgreSQL alimentant un système de gestion de prêts (LMS) et des intégrations sécurisées de passerelles de paiement.",
+          "Audit et refactor de larges portions de code sur 3 projets — structure, lisibilité, bonnes pratiques modernes.",
+          "Mentorat de 10 ingénieurs sur React et Git ; rédaction de docs internes pour faciliter l’onboarding."
+        ],
+        "stack": ["TypeScript", "React", "Next.js", "Node.js", "Java", "PostgreSQL"]
+      },
+      {
+        "company": "M2P Fintech",
+        "title": "SDE 1",
+        "period": "Juil. 2022 — Juil. 2024",
+        "location": "Mumbai, Inde",
+        "bullets": [
+          "Optimisation de l’UI de l’application Core Banking System (CBS) pour Turing 3.0 en EJS, JavaScript et jQuery.",
+          "Pilotage de la migration Turing 3.0 → React et création d’un form builder drag-and-drop permettant aux non-utilisateurs de React de créer des formulaires, réduisant le temps de dev UI.",
+          "Direction d’une équipe de 5 personnes pour concevoir l’UI de Turing 4.0 ; contributions backend en Java et MySQL."
+        ],
+        "stack": ["React", "Node.js", "Java", "MySQL", "jQuery"]
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "BOÎTE À OUTILS",
+    "headingPre": "Compétences &",
+    "headingAccent": "outils",
+    "resume": {
+      "title": "CV",
+      "subtitle": "À jour · PDF",
+      "download": "Télécharger",
+      "preview": "Aperçu",
+      "downloadAria": "Télécharger le CV en PDF",
+      "previewAria": "Voir le CV dans un nouvel onglet",
+      "lightLabel": "Mode clair",
+      "darkLabel": "Mode sombre",
+      "themeGroup": "Thème de couleur"
+    },
+    "categories": [
+      { "title": "Frontend", "items": ["React", "Next.js", "TypeScript", "Tailwind", "HTML / CSS"] },
+      { "title": "Backend", "items": ["Node.js", "NestJS", "MongoDB", "MySQL", "REST"] },
+      { "title": "Outillage", "items": ["Docker", "Git / GitHub", "Jira", "VS Code"] },
+      { "title": "IA / ML", "items": ["Python", "Pandas", "Prompt Eng.", "APIs LLM"] }
+    ],
+    "carouselTitle": "Stack technique que j’utilise"
+  },
+  "work": {
+    "kicker": "PORTFOLIO",
+    "headingPre": "Projets",
+    "headingAccent": "sélectionnés",
+    "subtitle": "Deux réalisations dont je suis le plus fier en dehors du travail produit quotidien.",
+    "labels": {
+      "problem": "Problème",
+      "build": "Ce que j’ai construit",
+      "alsoOn": "AUSSI SUR",
+      "profile": "Profil",
+      "openIn": "Ouvrir {name} dans un nouvel onglet"
+    },
+    "projects": [
+      {
+        "title": "IA agentique pour les workflows marketing",
+        "tagline": "Une couche de décision unique au-dessus des stacks CPaaS, CMS et CRM.",
+        "problem": "Les équipes marketing & ventes jonglent avec des outils déconnectés — le contexte vit en silos et les signaux clients se perdent entre les systèmes.",
+        "build": "J’ai construit le moteur central qui ingère les données CPaaS, CMS et CRM, maintient un contexte client synchronisé et exécute des modèles d’IA pour la prédiction d’intention, la next-best-action, les recommandations produit et la prévision de churn.",
+        "badge": "FinTech · IA"
+      },
+      {
+        "title": "Plateforme e-commerce de négoce de diamants",
+        "tagline": "Découverte produit et flux de négoce en ligne pour les diamants.",
+        "problem": "Une entreprise de négoce de diamants devait porter la découverte, l’inventaire et les transactions en ligne sans perdre la finesse des workflows B2B.",
+        "build": "J’ai construit les fonctionnalités clés de la plateforme : gestion du catalogue, interactions client et opérations — navigation responsive, visibilité d’inventaire en temps réel et gestion de transactions de bout en bout avec des APIs backend.",
+        "badge": "E-Commerce"
+      }
+    ],
+    "profiles": [
+      {
+        "title": "GitHub",
+        "description": "Projets perso, expérimentations et open source — apps MERN, notebooks ML et plus."
+      },
+      {
+        "title": "LeetCode",
+        "description": "Pratique DSA — résolution quotidienne sur tableaux, graphes, DP et plus."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "CONTACT",
+    "headingPre": "Construisons",
+    "headingAccent": "quelque chose",
+    "subtitle": "Ouvert au freelance, aux postes en CDI et aux collaborations intéressantes. Envoyez un message — je réponds sous un jour.",
+    "bestWay": "Meilleur moyen de me joindre",
+    "splitting": "Entre Mumbai & Dubaï · Disponible en remote dans le monde",
+    "socials": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
+    "locations": [
+      { "city": "Dubaï, ÉAU", "note": "Actuellement ici", "badge": "ICI" },
+      { "city": "Mumbai, Inde", "note": "Base d’attache", "badge": "AUSSI" }
+    ]
+  },
+  "footer": {
+    "designedHtml": "Conçu, développé &amp; maintenu par <strong>Prem Vispute</strong>",
+    "rights": "© {year} Prem Vispute. Tous droits réservés."
+  }
+}

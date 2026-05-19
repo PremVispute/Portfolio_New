@@ -1,27 +1,14 @@
+"use client";
+
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaBriefcase, FaGraduationCap } from "react-icons/fa6";
+import { useI18n } from "@/utils/helpers/I18nProvider";
 import profileImg from "@/utils/images/79bd2eba-2ca0-4c9e-84c6-d4d02227937d.webp";
 
-const STATS = [
-  { value: "4+", label: "Years in FinTech" },
-  { value: "3", label: "Companies · IN & UAE" },
-  { value: "6", label: "Countries Shipped To" },
-];
-
-const TAGS = [
-  "Payment Gateways",
-  "Core Banking",
-  "LMS",
-  "SWITCH",
-  "TypeScript",
-  "React / Next.js",
-  "Node.js",
-  "Java",
-  "PostgreSQL",
-];
-
 export default function About() {
+  const { content } = useI18n();
+
   return (
     <section
       id="about"
@@ -30,13 +17,14 @@ export default function About() {
     >
       <div className="text-center mb-10">
         <p className="font-din text-xs sm:text-sm tracking-[0.3em] text-slate-500 dark:text-slate-400">
-          ABOUT ME
+          {content.about.kicker}
         </p>
         <h2
           id="about-heading"
           className="mt-2 font-din font-bold text-3xl sm:text-4xl md:text-5xl"
         >
-          A bit <span className="gradient-text">about me</span>
+          {content.about.headingPre}{" "}
+          <span className="gradient-text">{content.about.headingAccent}</span>
         </h2>
       </div>
 
@@ -68,42 +56,36 @@ export default function About() {
           </div>
 
           {/* Bio */}
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 text-center md:text-start">
             <h3 className="font-din font-bold text-2xl md:text-3xl text-slate-900 dark:text-white">
               Prem Vispute
             </h3>
             <p className="mt-1 text-sm font-semibold font-din tracking-widest gradient-text">
-              FULL-STACK ENGINEER · FINTECH · INDIA &amp; UAE
+              {content.about.role}
             </p>
 
-            <p className="mt-4 text-slate-700 dark:text-slate-300 font-din leading-relaxed">
-              I&apos;ve spent the last 4 years building financial software that
-              handles real money &mdash;{" "}
-              <span className="font-semibold text-slate-900 dark:text-white">
-                Core Banking, Loan Management, Payment Gateways, and SWITCH
-              </span>{" "}
-              systems &mdash; at FinTech startups in India and the UAE.
-              Currently in Dubai, building the merchant ecosystem behind a
-              payment gateway while pursuing an MBA at NMIMS.
-            </p>
+            <p
+              className="mt-4 text-slate-700 dark:text-slate-300 font-din leading-relaxed [&_strong]:font-semibold [&_strong]:text-slate-900 dark:[&_strong]:text-white"
+              dangerouslySetInnerHTML={{ __html: content.about.bioHtml }}
+            />
 
             <div className="mt-5 flex flex-wrap justify-center md:justify-start gap-3 text-sm font-din text-slate-700 dark:text-slate-300">
               <span className="inline-flex items-center gap-2 rounded-full glass px-3 py-1.5">
                 <FaMapMarkerAlt className="text-indigo-500" />
-                Mumbai &middot; Dubai
+                {content.about.chips.location}
               </span>
               <span className="inline-flex items-center gap-2 rounded-full glass px-3 py-1.5">
                 <FaBriefcase className="text-fuchsia-500" />
-                FinTech Full-Stack Engineer
+                {content.about.chips.job}
               </span>
               <span className="inline-flex items-center gap-2 rounded-full glass px-3 py-1.5">
                 <FaGraduationCap className="text-sky-500" />
-                BE IT &middot; MBA (NMIMS)
+                {content.about.chips.education}
               </span>
             </div>
 
             <div className="mt-5 flex flex-wrap justify-center md:justify-start gap-2">
-              {TAGS.map((t) => (
+              {content.about.tags.map((t) => (
                 <span
                   key={t}
                   className="rounded-full border border-black/[0.08] dark:border-white/10 bg-white/40 dark:bg-white/[0.03] px-3 py-1 text-xs font-medium font-din text-slate-700 dark:text-slate-200"
@@ -117,7 +99,7 @@ export default function About() {
 
         {/* Stats */}
         <div className="relative mt-10 grid grid-cols-3 gap-4">
-          {STATS.map((s) => (
+          {content.about.stats.map((s) => (
             <div key={s.label} className="glass rounded-2xl p-4 text-center">
               <p className="font-din font-bold text-2xl md:text-3xl gradient-text">
                 {s.value}

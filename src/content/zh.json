@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Prem Vispute — 作品集",
+    "description": "前端 · 全栈 · AI / ML — Prem Vispute 的个人作品集"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "experience": "经历",
+    "skills": "技能",
+    "work": "作品",
+    "contact": "联系"
+  },
+  "language": {
+    "title": "语言",
+    "label": "切换语言",
+    "current": "当前语言"
+  },
+  "hero": {
+    "badge": "正在寻找资深全栈与金融科技岗位",
+    "greeting": "你好,我是",
+    "name": "Prem",
+    "introHtml": "过去 4 年里,我一直在构建处理真实资金的 <strong>金融科技</strong> 平台,涵盖 <strong>支付网关</strong>、<strong>核心银行</strong> 和 <strong>贷款管理</strong>,在 <strong>孟买与迪拜</strong> 之间持续交付生产级软件。",
+    "ctaWork": "查看作品",
+    "ctaContact": "联系我",
+    "scroll": "向下滚动"
+  },
+  "about": {
+    "kicker": "关于我",
+    "headingPre": "一点点",
+    "headingAccent": "关于我的事",
+    "role": "全栈工程师 · 金融科技 · 印度与阿联酋",
+    "bioHtml": "过去 4 年我一直在构建处理真实资金的金融软件,包括印度与阿联酋金融科技创业公司中的 <strong>核心银行、贷款管理、支付网关和 SWITCH</strong> 系统。目前我在迪拜负责支付网关背后的商户生态系统建设,同时在 NMIMS 攻读 MBA。",
+    "chips": {
+      "location": "孟买 · 迪拜",
+      "job": "金融科技全栈工程师",
+      "education": "信息技术本科 · NMIMS MBA"
+    },
+    "tags": [
+      "支付网关",
+      "核心银行",
+      "贷款管理系统",
+      "SWITCH",
+      "TypeScript",
+      "React / Next.js",
+      "Node.js",
+      "Java",
+      "PostgreSQL"
+    ],
+    "stats": [
+      { "value": "4+", "label": "金融科技从业年数" },
+      { "value": "3", "label": "公司 · 印度与阿联酋" },
+      { "value": "6", "label": "服务过的国家" }
+    ]
+  },
+  "experience": {
+    "kicker": "经历",
+    "headingPre": "我曾",
+    "headingAccent": "交付的地方",
+    "subtitle": "横跨印度与阿联酋的三家金融科技公司,共四年。",
+    "current": "在职",
+    "roles": [
+      {
+        "company": "Omnis Solutio",
+        "title": "全栈工程师",
+        "period": "2025 年 11 月 — 至今",
+        "location": "阿联酋,迪拜",
+        "current": true,
+        "bullets": [
+          "为支付网关搭建商户生态系统,包括但不限于商家用于在线收款的仪表盘、收银台、SDK 与 CMS 集成。",
+          "设计了一个后端驱动的前端架构,带有可配置的主题层,品牌信息(Logo、字体、颜色)及大部分 UI 变更均通过配置下发,无需重新部署前端。",
+          "调研 WooCommerce、WordPress、Shopify 与 Wix 等平台的插件生态,并提出可扩展的实现策略。",
+          "上线公司全球网站,实现本地化并为 6 个国家提供区域化内容。"
+        ],
+        "stack": ["TypeScript", "React", "Node.js", "JavaScript"]
+      },
+      {
+        "company": "Golden Legand Leasing & Finance",
+        "title": "全栈工程师",
+        "period": "2024 年 7 月 — 2025 年 11 月",
+        "location": "印度,孟买",
+        "bullets": [
+          "主导 4+ 个企业级 Web 平台的全栈开发,使用 React、TypeScript 与 Next.js,聚焦响应式与高性能 UI。",
+          "用 Java 与 PostgreSQL 构建后端 REST API,支撑贷款管理系统(LMS)与安全的支付网关集成。",
+          "在 3 个项目中对大量代码进行了审查与重构,涵盖结构、可读性与现代最佳实践。",
+          "对 10 名工程师进行 React 与 Git 工作流培训,撰写内部最佳实践文档以改善新人入职。"
+        ],
+        "stack": ["TypeScript", "React", "Next.js", "Node.js", "Java", "PostgreSQL"]
+      },
+      {
+        "company": "M2P Fintech",
+        "title": "软件工程师 1",
+        "period": "2022 年 7 月 — 2024 年 7 月",
+        "location": "印度,孟买",
+        "bullets": [
+          "使用 EJS、JavaScript 与 jQuery 优化 Turing 3.0 核心银行系统(CBS)应用的 UI。",
+          "主导 Turing 3.0 至 React 的迁移,构建拖拽式表单生成器,让非 React 用户也能独立创建表单,大幅缩短 UI 开发时间。",
+          "带领 5 人团队设计 Turing 4.0 的 UI,并参与 Java 与 MySQL 后端服务开发。"
+        ],
+        "stack": ["React", "Node.js", "Java", "MySQL", "jQuery"]
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "工具箱",
+    "headingPre": "技能与",
+    "headingAccent": "工具",
+    "resume": {
+      "title": "简历",
+      "subtitle": "最新版本 · PDF",
+      "download": "下载",
+      "preview": "预览",
+      "downloadAria": "下载简历 PDF",
+      "previewAria": "在新标签页查看简历",
+      "lightLabel": "浅色模式",
+      "darkLabel": "深色模式",
+      "themeGroup": "颜色主题"
+    },
+    "categories": [
+      { "title": "前端", "items": ["React", "Next.js", "TypeScript", "Tailwind", "HTML / CSS"] },
+      { "title": "后端", "items": ["Node.js", "NestJS", "MongoDB", "MySQL", "REST"] },
+      { "title": "工具", "items": ["Docker", "Git / GitHub", "Jira", "VS Code"] },
+      { "title": "AI / ML", "items": ["Python", "Pandas", "提示词工程", "LLM APIs"] }
+    ],
+    "carouselTitle": "我常用的技术栈"
+  },
+  "work": {
+    "kicker": "作品集",
+    "headingPre": "精选",
+    "headingAccent": "项目",
+    "subtitle": "除日常产品工作外,我最自豪的两个项目。",
+    "labels": {
+      "problem": "问题",
+      "build": "我构建的内容",
+      "alsoOn": "也活跃于",
+      "profile": "主页",
+      "openIn": "在新标签页打开 {name}"
+    },
+    "projects": [
+      {
+        "title": "面向营销流程的智能体 AI",
+        "tagline": "在公司 CPaaS、CMS 与 CRM 栈之上的统一决策层。",
+        "problem": "市场与销售团队需要在多个互不相通的工具间切换,上下文被孤岛化,客户信号在系统之间丢失。",
+        "build": "构建了核心引擎,负责从 CPaaS、CMS 与 CRM 平台汇总数据,维护同步的客户上下文,并运行用于意图预测、最佳下一步行动、产品推荐与流失预测的 AI 模型。",
+        "badge": "金融科技 · AI"
+      },
+      {
+        "title": "钻石交易电商平台",
+        "tagline": "面向钻石行业的在线产品发现与交易流程。",
+        "problem": "一家钻石交易公司需要将商品发现、库存与交易迁移到线上,同时保留 B2B 交易工作流的细节。",
+        "build": "构建了平台的核心能力:目录管理、客户互动与业务运营 — 响应式浏览、实时库存可见性,以及由后端 API 驱动的端到端交易管理。",
+        "badge": "电商"
+      }
+    ],
+    "profiles": [
+      {
+        "title": "GitHub",
+        "description": "个人项目、实验与开源工作 — MERN 应用、机器学习笔记等。"
+      },
+      {
+        "title": "LeetCode",
+        "description": "数据结构与算法练习 — 每日刷题,涵盖数组、图、动态规划等。"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "联系",
+    "headingPre": "一起",
+    "headingAccent": "做点什么",
+    "subtitle": "欢迎自由职业、全职机会和有趣的合作。给我留言,我会在一天内回复。",
+    "bestWay": "联系我的最佳方式",
+    "splitting": "时间在孟买与迪拜之间分配 · 接受全球远程协作",
+    "socials": {
+      "email": "邮箱",
+      "whatsapp": "WhatsApp",
+      "linkedin": "领英",
+      "instagram": "Instagram"
+    },
+    "locations": [
+      { "city": "阿联酋 · 迪拜", "note": "目前所在地", "badge": "现在" },
+      { "city": "印度 · 孟买", "note": "主要据点", "badge": "也常驻" }
+    ]
+  },
+  "footer": {
+    "designedHtml": "由 <strong>Prem Vispute</strong> 设计、开发与维护",
+    "rights": "© {year} Prem Vispute. 保留所有权利。"
+  }
+}

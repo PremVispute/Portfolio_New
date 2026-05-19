@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import I18nProvider from "@/utils/helpers/I18nProvider";
 import ThemeProvider from "@/utils/helpers/ThemeProvider";
 
 export const metadata: Metadata = {
@@ -14,11 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" dir="ltr" suppressHydrationWarning>
       <body className="text-slate-900 dark:text-slate-100 antialiased font-din">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="site-bg" aria-hidden="true" />
-          <main className="relative">{children}</main>
+          <I18nProvider>
+            <div className="site-bg" aria-hidden="true" />
+            <main className="relative">{children}</main>
+          </I18nProvider>
         </ThemeProvider>
       </body>
     </html>

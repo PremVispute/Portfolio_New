@@ -1,15 +1,12 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useI18n } from "@/utils/helpers/I18nProvider";
+import LanguageSwitcher from "./LanguageSwitcher";
 
-const SECTIONS = [
-  { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
-  { id: "skills", label: "Skills" },
-  { id: "work", label: "Work" },
-  { id: "contact", label: "Contact" },
-];
+const SECTIONS = ["about", "experience", "skills", "work", "contact"] as const;
 
 export default function Header() {
+  const { content } = useI18n();
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState<string>("");
 
@@ -21,7 +18,7 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    const els = SECTIONS.map((s) => document.getElementById(s.id)).filter(
+    const els = SECTIONS.map((id) => document.getElementById(id)).filter(
       (el): el is HTMLElement => !!el,
     );
     if (els.length === 0) return;
@@ -65,12 +62,12 @@ export default function Header() {
 
         <nav aria-label="Primary" className="flex items-center">
           <ul className="flex items-center gap-1 rounded-full glass px-1.5 py-1.5">
-            {SECTIONS.map((s) => {
-              const isActive = active === s.id;
+            {SECTIONS.map((id) => {
+              const isActive = active === id;
               return (
-                <li key={s.id}>
+                <li key={id}>
                   <a
-                    href={`#${s.id}`}
+                    href={`#${id}`}
                     aria-current={isActive ? "page" : undefined}
                     className={`relative inline-flex items-center px-3 md:px-4 py-1.5 text-xs md:text-sm font-medium font-din rounded-full transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 ${
                       isActive
@@ -84,13 +81,15 @@ export default function Header() {
                         className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 to-fuchsia-500 shadow-md shadow-indigo-500/30"
                       />
                     )}
-                    <span className="relative">{s.label}</span>
+                    <span className="relative">{content.nav[id]}</span>
                   </a>
                 </li>
               );
             })}
           </ul>
         </nav>
+
+        <LanguageSwitcher />
       </div>
     </header>
   );

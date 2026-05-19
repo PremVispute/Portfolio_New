@@ -1,14 +1,20 @@
+"use client";
+
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useI18n } from "@/utils/helpers/I18nProvider";
 
 export default function Footer() {
+  const { content } = useI18n();
+  const year = new Date().getFullYear().toString();
+
   return (
     <footer className="relative mt-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="glass rounded-2xl px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-din text-sm text-slate-600 dark:text-slate-400 text-center sm:text-left">
-            Designed, developed & maintained by{" "}
-            <span className="gradient-text font-semibold">Prem Vispute</span>
-          </p>
+          <p
+            className="font-din text-sm text-slate-600 dark:text-slate-400 text-center sm:text-start [&_strong]:font-semibold [&_strong]:text-slate-900 dark:[&_strong]:text-white"
+            dangerouslySetInnerHTML={{ __html: content.footer.designedHtml }}
+          />
           <div className="flex items-center gap-3">
             <a
               href="https://github.com/PremVispute"
@@ -31,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="text-center font-din text-xs text-slate-500 dark:text-slate-500 py-6">
-          © {new Date().getFullYear()} Prem Vispute. All rights reserved.
+          {content.footer.rights.replace("{year}", year)}
         </p>
       </div>
     </footer>

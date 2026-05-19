@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Prem Vispute — ポートフォリオ",
+    "description": "フロントエンド · フルスタック · AI / ML — Prem Vispute の個人ポートフォリオ"
+  },
+  "nav": {
+    "home": "ホーム",
+    "about": "自己紹介",
+    "experience": "経験",
+    "skills": "スキル",
+    "work": "実績",
+    "contact": "連絡先"
+  },
+  "language": {
+    "title": "言語",
+    "label": "言語を変更",
+    "current": "現在の言語"
+  },
+  "hero": {
+    "badge": "シニア・フルスタック / FinTech ロールに関心あり",
+    "greeting": "こんにちは、私は",
+    "name": "Prem",
+    "introHtml": "この 4 年間、<strong>FinTech</strong> プラットフォームを構築してきました。実際のお金を扱う <strong>決済ゲートウェイ</strong>、<strong>コアバンキング</strong>、<strong>ローン管理</strong> などを含み、<strong>ムンバイとドバイ</strong> で本番ソフトウェアを届けています。",
+    "ctaWork": "実績を見る",
+    "ctaContact": "問い合わせる",
+    "scroll": "スクロール"
+  },
+  "about": {
+    "kicker": "自己紹介",
+    "headingPre": "少しだけ",
+    "headingAccent": "私について",
+    "role": "フルスタックエンジニア · FinTech · インド & UAE",
+    "bioHtml": "この 4 年間、実際のお金を扱う金融ソフトウェアを構築してきました。インドと UAE の FinTech スタートアップで、<strong>コアバンキング、ローン管理、決済ゲートウェイ、SWITCH</strong> システムに携わっています。現在はドバイで、決済ゲートウェイの背後にある加盟店エコシステムを構築しながら、NMIMS で MBA を履修しています。",
+    "chips": {
+      "location": "ムンバイ · ドバイ",
+      "job": "FinTech フルスタックエンジニア",
+      "education": "BE IT · MBA (NMIMS)"
+    },
+    "tags": [
+      "決済ゲートウェイ",
+      "コアバンキング",
+      "LMS",
+      "SWITCH",
+      "TypeScript",
+      "React / Next.js",
+      "Node.js",
+      "Java",
+      "PostgreSQL"
+    ],
+    "stats": [
+      { "value": "4+", "label": "FinTech 経験年数" },
+      { "value": "3", "label": "企業 · インド & UAE" },
+      { "value": "6", "label": "展開国数" }
+    ]
+  },
+  "experience": {
+    "kicker": "経験",
+    "headingPre": "私が",
+    "headingAccent": "届けてきた場所",
+    "subtitle": "インドと UAE の 3 つの FinTech 企業での 4 年間。",
+    "current": "現職",
+    "roles": [
+      {
+        "company": "Omnis Solutio",
+        "title": "フルスタックエンジニア",
+        "period": "2025年11月 — 現在",
+        "location": "ドバイ、UAE",
+        "current": true,
+        "bullets": [
+          "決済ゲートウェイ向けの加盟店エコシステムを構築。ダッシュボード、チェックアウト、SDK、CMS 連携など、企業のオンライン決済に使われる機能を担当。",
+          "設定可能なテーマレイヤーを持つバックエンド駆動のフロントエンドを設計し、ロゴ・フォント・色などのブランド変更や多くの UI 変更をフロントエンド再デプロイなしで反映可能にしました。",
+          "WooCommerce、WordPress、Shopify、Wix のプラグインエコシステムを調査し、拡張性のある実装戦略を提案。",
+          "6 か国向けにローカライズと地域別コンテンツを備えたグローバル Web プラットフォームをリリース。"
+        ],
+        "stack": ["TypeScript", "React", "Node.js", "JavaScript"]
+      },
+      {
+        "company": "Golden Legand Leasing & Finance",
+        "title": "フルスタックエンジニア",
+        "period": "2024年7月 — 2025年11月",
+        "location": "ムンバイ、インド",
+        "bullets": [
+          "React、TypeScript、Next.js を用いた 4 つ以上のエンタープライズ Web プラットフォームのフルスタック開発をリードし、レスポンシブで高性能な UI に注力。",
+          "ローン管理システム (LMS) と安全な決済ゲートウェイ連携を支える Java / PostgreSQL の REST API を構築。",
+          "3 つのプロジェクトでコードベースの大部分を監査・リファクタリングし、構造、可読性、モダンなベストプラクティスを改善。",
+          "React と Git ワークフローについて 10 名のエンジニアをメンタリングし、オンボーディング改善のための社内ベストプラクティス文書を作成。"
+        ],
+        "stack": ["TypeScript", "React", "Next.js", "Node.js", "Java", "PostgreSQL"]
+      },
+      {
+        "company": "M2P Fintech",
+        "title": "SDE 1",
+        "period": "2022年7月 — 2024年7月",
+        "location": "ムンバイ、インド",
+        "bullets": [
+          "EJS、JavaScript、jQuery を使い、Turing 3.0 向け Core Banking System (CBS) アプリケーションの UI を最適化。",
+          "Turing 3.0 から React への移行をリードし、React に詳しくないユーザーでもフォームを自作できるドラッグ&ドロップ式フォームビルダーを構築。UI 開発時間を削減。",
+          "5 名のチームを率いて Turing 4.0 の UI を設計し、Java と MySQL によるバックエンドサービスにも貢献。"
+        ],
+        "stack": ["React", "Node.js", "Java", "MySQL", "jQuery"]
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "ツールボックス",
+    "headingPre": "スキル &",
+    "headingAccent": "ツール",
+    "resume": {
+      "title": "履歴書",
+      "subtitle": "最新版 · PDF",
+      "download": "ダウンロード",
+      "preview": "プレビュー",
+      "downloadAria": "履歴書 PDF をダウンロード",
+      "previewAria": "履歴書 PDF を新しいタブで開く",
+      "lightLabel": "ライトモード",
+      "darkLabel": "ダークモード",
+      "themeGroup": "カラーテーマ"
+    },
+    "categories": [
+      { "title": "フロントエンド", "items": ["React", "Next.js", "TypeScript", "Tailwind", "HTML / CSS"] },
+      { "title": "バックエンド", "items": ["Node.js", "NestJS", "MongoDB", "MySQL", "REST"] },
+      { "title": "ツール", "items": ["Docker", "Git / GitHub", "Jira", "VS Code"] },
+      { "title": "AI / ML", "items": ["Python", "Pandas", "Prompt Eng.", "LLM APIs"] }
+    ],
+    "carouselTitle": "私が扱う技術スタック"
+  },
+  "work": {
+    "kicker": "ポートフォリオ",
+    "headingPre": "主な",
+    "headingAccent": "プロジェクト",
+    "subtitle": "日々のプロダクト業務以外で、特に誇りに思っている 2 つの成果です。",
+    "labels": {
+      "problem": "課題",
+      "build": "構築したもの",
+      "alsoOn": "こちらにも掲載",
+      "profile": "プロフィール",
+      "openIn": "{name} を新しいタブで開く"
+    },
+    "projects": [
+      {
+        "title": "マーケティングワークフロー向けエージェント AI",
+        "tagline": "CPaaS、CMS、CRM スタックを横断する単一の意思決定レイヤー。",
+        "problem": "マーケティングと営業チームは分断されたツールを行き来し、文脈はサイロ化され、顧客シグナルがシステム間で失われていました。",
+        "build": "CPaaS、CMS、CRM からデータを取り込み、同期された顧客コンテキストを維持し、意図予測、次善アクション、商品レコメンド、解約予測の AI モデルを実行するコアエンジンを構築。",
+        "badge": "FinTech · AI"
+      },
+      {
+        "title": "ダイヤモンド取引 E コマースプラットフォーム",
+        "tagline": "ダイヤモンド向けの商品発見とオンライン取引フロー。",
+        "problem": "ダイヤモンド取引会社は、B2B 取引の繊細なワークフローを失わずに、商品発見、在庫、取引をオンライン化する必要がありました。",
+        "build": "カタログ管理、顧客対応、業務運用の中核機能を構築。レスポンシブな閲覧、リアルタイム在庫可視化、バックエンド API によるエンドツーエンドの取引管理を実現しました。",
+        "badge": "Eコマース"
+      }
+    ],
+    "profiles": [
+      {
+        "title": "GitHub",
+        "description": "サイドプロジェクト、実験、オープンソース — MERN アプリ、ML ノートブックなど。"
+      },
+      {
+        "title": "LeetCode",
+        "description": "DSA の練習 — 配列、グラフ、動的計画法などを日々解いています。"
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "連絡先",
+    "headingPre": "一緒に",
+    "headingAccent": "作りましょう",
+    "subtitle": "フリーランス、フルタイム、面白いコラボレーションに関心があります。メッセージをいただければ 1 日以内に返信します。",
+    "bestWay": "一番連絡しやすい方法",
+    "splitting": "ムンバイとドバイを行き来しています · 世界中からのリモート案件に対応可能",
+    "socials": {
+      "email": "メール",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
+    "locations": [
+      { "city": "ドバイ、UAE", "note": "現在ここにいます", "badge": "NOW" },
+      { "city": "ムンバイ、インド", "note": "ホームベース", "badge": "ALSO" }
+    ]
+  },
+  "footer": {
+    "designedHtml": "設計・開発・保守: <strong>Prem Vispute</strong>",
+    "rights": "© {year} Prem Vispute. All rights reserved."
+  }
+}

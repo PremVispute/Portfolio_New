@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Prem Vispute — Portfolio",
+    "description": "Front-end · Full-stack · AI / ML — Personal portfolio of Prem Vispute"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "language": {
+    "title": "Language",
+    "label": "Change language",
+    "current": "Current language"
+  },
+  "hero": {
+    "badge": "Open to senior full-stack & FinTech roles",
+    "greeting": "Hi, I’m",
+    "name": "Prem",
+    "introHtml": "For 4 years I’ve built <strong>FinTech</strong> platforms that move real money, including <strong>payment gateways</strong>, <strong>core banking</strong>, and <strong>loan management</strong> shipping production software across <strong>Mumbai &amp; Dubai</strong>.",
+    "ctaWork": "View my work",
+    "ctaContact": "Get in touch",
+    "scroll": "SCROLL"
+  },
+  "about": {
+    "kicker": "ABOUT ME",
+    "headingPre": "A bit",
+    "headingAccent": "about me",
+    "role": "FULL-STACK ENGINEER · FINTECH · INDIA & UAE",
+    "bioHtml": "I’ve spent the last 4 years building financial software that handles real money, including <strong>Core Banking, Loan Management, Payment Gateways, and SWITCH</strong> systems at FinTech startups in India and the UAE. Currently in Dubai, building the merchant ecosystem behind a payment gateway while pursuing an MBA at NMIMS.",
+    "chips": {
+      "location": "Mumbai · Dubai",
+      "job": "FinTech Full-Stack Engineer",
+      "education": "BE IT · MBA (NMIMS)"
+    },
+    "tags": [
+      "Payment Gateways",
+      "Core Banking",
+      "LMS",
+      "SWITCH",
+      "TypeScript",
+      "React / Next.js",
+      "Node.js",
+      "Java",
+      "PostgreSQL"
+    ],
+    "stats": [
+      { "value": "4+", "label": "Years in FinTech" },
+      { "value": "3", "label": "Companies · IN & UAE" },
+      { "value": "6", "label": "Countries Shipped To" }
+    ]
+  },
+  "experience": {
+    "kicker": "EXPERIENCE",
+    "headingPre": "Where I’ve",
+    "headingAccent": "shipped",
+    "subtitle": "Four years across three FinTech companies in India and the UAE.",
+    "current": "Current",
+    "roles": [
+      {
+        "company": "Omnis Solutio",
+        "title": "Full-Stack Engineer",
+        "period": "Nov 2025 — Present",
+        "location": "Dubai, UAE",
+        "current": true,
+        "bullets": [
+          "Building the merchant ecosystem for a payment gateway including but not limited to dashboards, checkout, SDKs and CMS integrations used by businesses for online payments.",
+          "Designed a backend-driven frontend with a configurable theming layer so branding (logo, font, colors) and most UI changes ship via config needing no frontend redeploys.",
+          "Researched plugin ecosystems across WooCommerce, WordPress, Shopify and Wix; proposed a scalable implementation strategy.",
+          "Shipped the company’s global web platform with localization and region-specific content across 6 countries."
+        ],
+        "stack": ["TypeScript", "React", "Node.js", "JavaScript"]
+      },
+      {
+        "company": "Golden Legand Leasing & Finance",
+        "title": "Full-Stack Engineer",
+        "period": "Jul 2024 — Nov 2025",
+        "location": "Mumbai, India",
+        "bullets": [
+          "Led full-stack development of 4+ enterprise web platforms in React, TypeScript and Next.js with a focus on responsive, high-performance UI.",
+          "Built backend REST APIs in Java and PostgreSQL powering a Loan Management System (LMS) and secure payment gateway integrations.",
+          "Audited and refactored large portions of the codebase across 3 projects — structure, readability, modern best practices.",
+          "Mentored 10 engineers on React and Git workflows; authored internal best-practice docs to improve onboarding."
+        ],
+        "stack": ["TypeScript", "React", "Next.js", "Node.js", "Java", "PostgreSQL"]
+      },
+      {
+        "company": "M2P Fintech",
+        "title": "SDE 1",
+        "period": "Jul 2022 — Jul 2024",
+        "location": "Mumbai, India",
+        "bullets": [
+          "Optimized the UI of the Core Banking System (CBS) application for Turing 3.0 using EJS, JavaScript and jQuery.",
+          "Led the Turing 3.0 → React migration and built a drag-and-drop form builder that let non-React users create forms independently, cutting UI dev time.",
+          "Led a team of 5 designing Turing 4.0’s UI; contributed to backend services in Java and MySQL."
+        ],
+        "stack": ["React", "Node.js", "Java", "MySQL", "jQuery"]
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "TOOLBOX",
+    "headingPre": "Skills &",
+    "headingAccent": "tools",
+    "resume": {
+      "title": "Resume",
+      "subtitle": "Up-to-date · PDF",
+      "download": "Download",
+      "preview": "Preview",
+      "downloadAria": "Download resume PDF",
+      "previewAria": "View resume PDF in new tab",
+      "lightLabel": "Light mode",
+      "darkLabel": "Dark mode",
+      "themeGroup": "Color theme"
+    },
+    "categories": [
+      { "title": "Frontend", "items": ["React", "Next.js", "TypeScript", "Tailwind", "HTML / CSS"] },
+      { "title": "Backend", "items": ["Node.js", "NestJS", "MongoDB", "MySQL", "REST"] },
+      { "title": "Tooling", "items": ["Docker", "Git / GitHub", "Jira", "VS Code"] },
+      { "title": "AI / ML", "items": ["Python", "Pandas", "Prompt Eng.", "LLM APIs"] }
+    ],
+    "carouselTitle": "Tech stack I work with"
+  },
+  "work": {
+    "kicker": "PORTFOLIO",
+    "headingPre": "Selected",
+    "headingAccent": "projects",
+    "subtitle": "Two builds I’m most proud of beyond day-to-day product work.",
+    "labels": {
+      "problem": "Problem",
+      "build": "What I built",
+      "alsoOn": "ALSO ON",
+      "profile": "Profile",
+      "openIn": "Open {name} in new tab"
+    },
+    "projects": [
+      {
+        "title": "Agentic AI for Marketing Workflows",
+        "tagline": "Single decision layer across a company’s CPaaS, CMS and CRM stack.",
+        "problem": "Marketing & sales teams juggle disconnected tools — context lives in silos and customer signals get lost between systems.",
+        "build": "Built the core engine that ingests data across CPaaS, CMS and CRM platforms, keeps a synchronized customer context, and runs AI models for intent prediction, next-best-action, product recommendations and churn forecasting.",
+        "badge": "FinTech · AI"
+      },
+      {
+        "title": "Diamond Trading E-Commerce Platform",
+        "tagline": "Online product discovery and trading workflows for diamonds.",
+        "problem": "A diamond trading business needed to move discovery, inventory and transactions online without losing the nuance of B2B trading workflows.",
+        "build": "Built core platform features for catalog management, customer interactions and business operations — responsive browsing, real-time inventory visibility, and end-to-end transaction management with backend APIs powering the data flow.",
+        "badge": "E-Commerce"
+      }
+    ],
+    "profiles": [
+      {
+        "title": "GitHub",
+        "description": "Side-projects, experiments and open-source work — MERN apps, ML notebooks and more."
+      },
+      {
+        "title": "LeetCode",
+        "description": "DSA practice — daily problem-solving across arrays, graphs, DP and more."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "CONTACT",
+    "headingPre": "Let’s",
+    "headingAccent": "build something",
+    "subtitle": "Open to freelance, full-time roles, and interesting collaborations. Drop a message — I’ll get back within a day.",
+    "bestWay": "Best way to reach me",
+    "splitting": "Splitting time between Mumbai & Dubai · Open to remote worldwide",
+    "socials": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
+    "locations": [
+      { "city": "Dubai, UAE", "note": "Currently here", "badge": "NOW" },
+      { "city": "Mumbai, India", "note": "Home base", "badge": "ALSO" }
+    ]
+  },
+  "footer": {
+    "designedHtml": "Designed, developed &amp; maintained by <strong>Prem Vispute</strong>",
+    "rights": "© {year} Prem Vispute. All rights reserved."
+  }
+}

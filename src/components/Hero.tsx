@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaArrowDown, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { useI18n } from "@/utils/helpers/I18nProvider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -14,6 +15,7 @@ const heroVideoSrc =
     : "/videos/hero-portfolio-reveal.mp4";
 
 export default function Hero() {
+  const { content } = useI18n();
   const heroRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
@@ -192,32 +194,24 @@ export default function Hero() {
               <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
             </span>
-            Open to senior full-stack & FinTech roles
+            {content.hero.badge}
           </span>
 
           <h2
             data-reveal
             className="relative mt-6 max-w-5xl font-din text-4xl font-bold leading-[0.95] tracking-tight text-white drop-shadow-[0_10px_28px_rgba(0,0,0,0.85)] sm:text-6xl md:text-7xl lg:text-8xl"
           >
-            Hi, I&rsquo;m{" "}
+            {content.hero.greeting}{" "}
             <span className="gradient-text inline-block [filter:drop-shadow(0_8px_26px_rgba(0,0,0,0.9))]">
-              Prem
+              {content.hero.name}
             </span>
           </h2>
 
           <p
             data-reveal
-            className="relative mt-4 max-w-2xl font-din text-base leading-relaxed text-white/92 drop-shadow-[0_8px_22px_rgba(0,0,0,0.9)] sm:text-lg md:text-xl"
-          >
-            For 4 years I&rsquo;ve built{" "}
-            <span className="text-white font-medium">FinTech</span> systems that
-            move real money &mdash;{" "}
-            <span className="text-white font-medium">payment gateways</span>,{" "}
-            <span className="text-white font-medium">core banking</span>, and{" "}
-            <span className="text-white font-medium">loan management</span>{" "}
-            &mdash; shipping production software across{" "}
-            <span className="text-white font-medium">Mumbai &amp; Dubai</span>.
-          </p>
+            className="relative mt-4 max-w-2xl font-din text-base leading-relaxed text-white/92 drop-shadow-[0_8px_22px_rgba(0,0,0,0.9)] sm:text-lg md:text-xl [&_strong]:font-medium [&_strong]:text-white"
+            dangerouslySetInnerHTML={{ __html: content.hero.introHtml }}
+          />
 
           <div
             data-reveal
@@ -227,13 +221,13 @@ export default function Hero() {
               href="#work"
               className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold font-din text-white bg-gradient-to-r from-indigo-500 to-fuchsia-500 hover:from-indigo-400 hover:to-fuchsia-400 shadow-lg shadow-indigo-500/25 transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300"
             >
-              View my work
+              {content.hero.ctaWork}
             </a>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold font-din text-white glass hover:bg-white/15 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
             >
-              Get in touch
+              {content.hero.ctaContact}
             </a>
           </div>
 
@@ -273,7 +267,9 @@ export default function Hero() {
             aria-label="Scroll to about section"
             className="absolute bottom-8 left-1/2 -translate-x-1/2 inline-flex flex-col items-center gap-1 text-white/70 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 rounded-md"
           >
-            <span className="text-xs font-din tracking-widest">SCROLL</span>
+            <span className="text-xs font-din tracking-widest">
+              {content.hero.scroll}
+            </span>
             <FaArrowDown className="animate-bounce" />
           </a>
         </div>
