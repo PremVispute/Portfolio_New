@@ -11,8 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const heroVideoSrc =
   process.env.NODE_ENV === "production"
-    ? "/Portfolio_New/videos/hero-portfolio-reveal.mp4"
-    : "/videos/hero-portfolio-reveal.mp4";
+    ? "/Portfolio_New/videos/hero-portfolio.scrub.mp4"
+    : "/videos/hero-portfolio.scrub.mp4";
 
 export default function Hero() {
   const { content } = useI18n();
